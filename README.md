@@ -23,15 +23,15 @@
 Setup Time Machine destination pool + dataset
 * zfs create TimeMachine/backup 
 
-Create users fpierfed and alicia and set their smb passwords
-* smbpasswd -a fpierfed
-* smbpasswd -a alicia
+Create users user1 and user2 and set their smb passwords
+* smbpasswd -a user1
+* smbpasswd -a user2
 
 Create user-specific datasets
-* zfs create TimeMachine/backup/fpierfed
-    * chown -R fpierfed:fpierfed /mnt/TimeMachine/backup/fpierfed
-* zfs create TimeMachine/backup/alicia
-    * chown -R alicia:alicia /mnt/TimeMachine/backup/alicia
+* zfs create TimeMachine/backup/user1
+    * chown -R user1:user1 /mnt/TimeMachine/backup/user1
+* zfs create TimeMachine/backup/user2
+    * chown -R user2:user2 /mnt/TimeMachine/backup/user2
 
 
 ## Periodic
@@ -41,4 +41,5 @@ Create user-specific datasets
 
 
 ## Resources
-* [Reddit post on TimeMachine setup archived](Screenshot_2025-01-20_at_08.25.46.png)
+* [FreeBSD forum post on TimeMachine setup archived](Screenshot_2025-01-20_at_08.25.46.png)
+* [Reddit post on avahi setup archived](Screenshot_2025-01-25_at_10.02.58.png)
