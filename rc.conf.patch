@@ -1,0 +1,10 @@
+--- /etc/rc.conf.bak	2025-01-19 20:38:38.959543000 +0000
++++ /etc/rc.conf	2025-01-19 19:53:56.628109000 +0000
+@@ -9,3 +9,6 @@
+ # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
+ dumpdev="AUTO"
+ zfs_enable="YES"
++smartd_enable="YES"
++dbus_enable="YES"
++avahi_daemon_enable="YES"
++samba_server_enable="YES"

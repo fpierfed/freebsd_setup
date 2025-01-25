@@ -1,0 +1,35 @@
+--- /etc/ssh/sshd_config.bak	2025-01-19 20:26:09.825940000 +0000
++++ /etc/ssh/sshd_config	2025-01-19 09:38:49.572925000 +0000
+@@ -32,12 +32,12 @@
+ # Authentication:
+ 
+ #LoginGraceTime 2m
+-PermitRootLogin yes
++PermitRootLogin no
+ #StrictModes yes
+ #MaxAuthTries 6
+ #MaxSessions 10
+ 
+-#PubkeyAuthentication yes
++PubkeyAuthentication yes
+ 
+ # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
+ # but this is overridden so installations will only check .ssh/authorized_keys
+@@ -58,7 +58,7 @@
+ 
+ # Change to yes to enable built-in password authentication.
+ # Note that passwords may also be accepted via KbdInteractiveAuthentication.
+-#PasswordAuthentication no
++PasswordAuthentication no
+ #PermitEmptyPasswords no
+ 
+ # Change to no to disable PAM authentication
+@@ -83,7 +83,7 @@
+ # If you just want the PAM account and session checks to run without
+ # PAM authentication, then enable this but set PasswordAuthentication
+ # and KbdInteractiveAuthentication to 'no'.
+-#UsePAM yes
++UsePAM no
+ 
+ #AllowAgentForwarding yes
+ #AllowTcpForwarding yes

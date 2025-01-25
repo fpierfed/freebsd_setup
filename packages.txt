@@ -1,0 +1,9 @@
+sudo
+zsh
+neovim
+python
+samba419
+avahi-app
+nss_mdns
+rsync
+cmdwatch

@@ -1,0 +1,7 @@
+--- /boot/loader.conf.bak	2025-01-19 20:39:35.944220000 +0000
++++ /boot/loader.conf	2025-01-18 21:49:11.102030000 +0000
+@@ -2,3 +2,4 @@
+ kern.geom.label.gptid.enable="0"
+ cryptodev_load="YES"
+ zfs_load="YES"
++hw.mfi.mrsas_enable="1"
