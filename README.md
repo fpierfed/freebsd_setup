@@ -8,6 +8,7 @@
     * /boot/loader.conf
     * /etc/rc.conf
     * /etc/ssh/sshd_conf
+    * /usr/local/etc/smartd.conf
 * (Re)start services
     * service avahi-daemon start
     * service dbus start
